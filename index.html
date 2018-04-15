@@ -1,25 +1,42 @@
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</script>
+</head>
+<script type="text/javascript">
+  $(document).ready(function(){
+	$("#target1").click(function(){
+		$("#img1").toggle(1000);
+	});
+	$("#target2").click(function(){
+		$("#img2").toggle(1000);
+	});
+	$("#target3").click(function(){
+		$("#img3").toggle(1000);
+	});
+  });
+</script>
 <html>
   <style>
-	h2{
-		color:white
+	h2 {
+		color:black;
 	}
-	.blackbg{
-		background:black
+	.bluebg{
+		background:#0ed4df;
 	}
 	.whiteword{
-		color:white
+		color:black;
 	}
 	.redword{
-		color:red
+		color:red;
 	}
 	.blueword{
-		color:#00FFFF
+		color:black;
 	}
 	.fontsize1{
-		font-size:20px
+		font-size:20px;
 	}
 	.fontsize2{
-		font-size:60px
+		font-size:60px;
 	}
 
   </style>
@@ -28,21 +45,24 @@
     <title>405261033 資工二甲 劉建良</title>
   </head>
   
-  <body class="blackbg">
+  <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2h4mGf4ibd6V70DG2F6_HhkOWhRSwMIVDCYQYtTlg0Xwfk3araQ" style="background-repeat:repeat-x;background-size:cover" >
 	<h1 align="center" class="redword" >welcome<h1>
-	<iframe name="pt" align="right" width="800" height="600"  frameborder="0"></iframe>
 		<h2>405261033 資工二甲 劉建良</h2>
 		<ul>
-		<li><a class="blueword"  href="aboutme.htm" target="pt" >個人簡介</a></li>
-		<li><a class="blueword" href="http://www3.csie.fju.edu.tw/layout/oneblue/vvindex.jsp">輔大資工網站</a></li>
+		<li><a class="blueword" href="http://www3.csie.fju.edu.tw/layout/oneblue/vvindex.jsp" >輔大資工網站</a></li>
 		<li><a class="blueword" href="http://www.eltd.fju.edu.tw/chi/sites/default/files/uploadfiles/map3.jpg">輔大地圖</a></li>
 		<li><a class="blueword" href="https://www.facebook.com/profile.php?id=100000231776676">我的fb</a></li>
 		</ul>
-	<p class="whiteword fontsize1">email: nail1021734@gmail.com</p>
-	
-
-	
-	
+	<p class="whiteword fontsize1">email:nail1021734@gmail.com</p>
   </body>
+  <div id="jqtest">
+	<img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBqZCcbVgR2XbxIlYWgQWD3ldS3YwxT43ybC6BDU1kLOGwQJlb"> </img>
+	<img id="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQenxtH6XvAWPRL1qzRvYQqtiKpBIKgRYd3Jr_lruJSaBndGy2GA"> </img>
+	<img id="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl4NYi1lv1xd7Xt4Jd7X2Irq-CQR4wE6pdiQEOYY_bguTsMjOUaw"> </img>
+	<br></br>
+	<button class="btn btn-default target" id="target1" >1</button>
+    <button class="btn btn-default target" id="target2">2</button>
+    <button class="btn btn-default target" id="target3">3</button>
+  </div>
   
 </html>
